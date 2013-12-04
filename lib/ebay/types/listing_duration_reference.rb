@@ -8,6 +8,7 @@ module Ebay # :nodoc:
       include Initializer
       root_element_name 'ListingDurationReference'
       numeric_node :listing_duration_reference, '', :optional => true
+      text_node :type, '@type', :optional => true
     end
   end
 end
