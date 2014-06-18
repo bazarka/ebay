@@ -15,7 +15,7 @@ module Ebay # :nodoc:
     class GetCategoryInfo < Abstract
       include XML::Mapping
       include Initializer
-      root_element_name 'GetCategoryInfo'
+      root_element_name 'GetCategoryInfoResponse'
       array_node :categories, 'CategoryArray', 'Category', :class => Category, :default_value => []
       numeric_node :category_count, 'CategoryCount', :optional => true
       time_node :update_time, 'UpdateTime', :optional => true
