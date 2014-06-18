@@ -350,6 +350,14 @@ module Ebay
     # Returns Ebay::Responses#GetCategorySpecifics
     #
     # Official Documentation for GetCategorySpecifics[http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/io_GetCategorySpecifics.html]
+    def get_category_info(params = {})
+      commit(Ebay::Requests::GetCategoryInfo, params)
+    end
+    # Builds Ebay::Requests#GetCategorySpecifics
+    #
+    # Returns Ebay::Responses#GetCategorySpecifics
+    #
+    # Official Documentation for GetCategorySpecifics[http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/io_GetCategorySpecifics.html]
     def get_category_specifics(params = {})
       commit(Ebay::Requests::GetCategorySpecifics, params)
     end
